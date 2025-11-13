@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriel 💕 Magdiel - 11 meses</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ffd6e7, #ffeef6);
+    text-align: center;
+    color: #b30059;
+    overflow: hidden;
+  }
+
+  h1 { margin-top: 20px; }
+
+  #start-btn, #next-btn {
+    margin-top: 150px;
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+    position: relative;
+    z-index: 10; /* botón siempre encima de slides */
+  }
+
+  #start-btn:hover, #next-btn:hover { transform: scale(1.05); }
+  #next-btn { display: none; }
+
+  .slide {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+  }
+
+  .slide.active { opacity: 1; }
+
+  .slide img {
+    width: 320px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+
+  .text {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #b30059;
+    background: rgba(255,255,255,0.8);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .collage-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .collage-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #fff;
+  }
+
+  .multi-photo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .multi-photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+</style>
+</head>
+<body>
+  <h1>💖 Gabriel & Magdiel 💖</h1>
+  <h3>11 meses juntos</h3>
+  <p>13 de noviembre de 2025</p>
+
+  <button id="start-btn">💞 Comenzar historia 💞</button>
+  <button id="next-btn">💖 Continuar con nuestra historia 💖</button>
+
+  <!-- Primera parte -->
+  <div id="part1" style="display:none;">
+    <div class="slide">
+      <img src="foto1.jpg" alt="">
+      <p class="text">Todo comenzó cuando te vi por primera vez, nunca había visto una mujer tan hermosa y cuando te vi me enamore a primera vista. Eras la mujer que pensaba que no iba a lograr enamorar hasta que paso esto...</p>
+    </div>
+    <div class="slide">
+      <img src="foto2.jpg" alt="">
+      <p class="text">Tu sonrisa me atrapó y supe que eras diferente 💕</p>
+    </div>
+    <div class="slide">
+      <div class="multi-photo">
+        <img src="collage1.jpg" alt="">
+        <img src="collage2.jpg" alt="">
+        <img src="collage3.jpg" alt="">
+        <img src="collage4.jpg" alt="">
+      </div>
+      <div class="text">Desde ese mensaje que envié, todo cambió entre nosotros 💞</div>
+    </div>
+    <div class="slide">
+      <div class="multi-photo">
+        <img src="collage2a.jpg" alt="">
+        <img src="collage2b.jpg" alt="">
+        <img src="collage2c.jpg" alt="">
+        <img src="collage2d.jpg" alt="">
+      </div>
+      <div class="text">Cada conversación nos unía más ❤️</div>
+    </div>
+    <div class="slide">
+      <img src="foto5.jpg" alt="">
+      <p class="text">Tu ternura y tus locuras me enamoraron 💫</p>
+    </div>
+    <div class="slide">
+      <img src="foto6.jpg" alt="">
+      <p class="text">Y así empezó esta historia tan bonita 💖</p>
+    </div>
+  </div>
+
+  <!-- Segunda parte -->
+  <div id="part2" style="display:none;">
+    <div class="slide part2"><img src="foto7.jpg" alt=""><div class="text">Estos 11 meses fueron maravillosos 💫</div></div>
+    <div class="slide part2"><img src="foto8.jpg" alt=""><div class="text">Cada sonrisa tuya ilumina mis días ☀️</div></div>
+    <div class="slide part2"><img src="foto9.jpg" alt=""><div class="text">Gracias por tanto amor y paciencia 💗</div></div>
+    <div class="slide part2"><img src="foto10.jpg" alt=""><div class="text">Contigo aprendí lo que es amar de verdad ❤️</div></div>
+    <div class="slide part2"><img src="foto11.jpg" alt=""><div class="text">Eres mi paz, mi alegría y mi todo 💖</div></div>
+    <div class="slide part2"><img src="foto12.jpg" alt=""><div class="text">A tu lado todo es mejor 💫</div></div>
+    <div class="slide part2"><img src="foto13.jpg" alt=""><div class="text">Eres mi lugar favorito 🌹</div></div>
+    <div class="slide part2"><img src="foto14.jpg" alt=""><div class="text">Nuestro amor solo crece cada día 💞</div></div>
+    <div class="slide part2"><img src="foto15.jpg" alt=""><div class="text">No hay nadie más para mí 💘</div></div>
+    <div class="slide part2"><img src="foto16.jpg" alt=""><div class="text final">✨ Te amo mi Pollito hermosa ❤️ Feliz 11 meses mi vida ✨</div></div>
+  </div>
+
+  <audio id="audio1" src="mevoyenamorando.mp3"></audio>
+  <audio id="audio2" src="nohaynadiemas.mp3"></audio>
+
+  <script>
+    const startBtn = document.getElementById("start-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const part1Slides = document.querySelectorAll("#part1 .slide");
+    const part2Slides = document.querySelectorAll("#part2 .slide");
+    const audio1 = document.getElementById("audio1");
+    const audio2 = document.getElementById("audio2");
+
+    let currentSlide = 0;
+    let intervalId = null;
+
+    function showSlide(slides, index) {
+      slides.forEach((s,i) => s.classList.remove("active"));
+      if(slides[index]) slides[index].classList.add("active");
+    }
+
+    function startSlideshow(slides, duration, onFinish) {
+      currentSlide = 0;
+      showSlide(slides, currentSlide);
+      intervalId = setInterval(() => {
+        currentSlide++;
+        if(currentSlide < slides.length){
+          showSlide(slides, currentSlide);
+        } else {
+          clearInterval(intervalId);
+          if(onFinish) onFinish();
+        }
+      }, duration);
+    }
+
+    startBtn.addEventListener("click", () => {
+      startBtn.style.display = "none";
+      document.getElementById("part1").style.display = "block";
+      audio1.currentTime = 0;
+      audio1.play();
+      startSlideshow(part1Slides, 14166, () => {
+        nextBtn.style.display = "inline-block";
+      });
+    });
+
+    nextBtn.addEventListener("click", () => {
+      nextBtn.style.display = "none";
+      document.getElementById("part1").style.display = "none";
+      document.getElementById("part2").style.display = "block";
+      audio1.pause();
+      audio2.currentTime = 0;
+      audio2.play();
+      startSlideshow(part2Slides, 19400);
+    });
+  </script>
+</body>
+</html>
