@@ -31,6 +31,14 @@
     z-index: 10; /* botón siempre encima de slides */
   }
 
+#part2 .slide:nth-child(1) img {
+  height: 400px; /* Aumenta según lo necesites */
+  width: auto;   /* Mantiene proporción original */
+  object-fit: cover; /* Mantiene que se recorte de manera elegante */
+  border-radius: 20px; /* Opcional, como tus otras fotos */
+}
+
+
   #start-btn:hover, #next-btn:hover { transform: scale(1.05); }
   #next-btn { display: none; }
 
